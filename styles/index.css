@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 .header {
   position: fixed;
   display: flex;
@@ -35,11 +39,16 @@ nav {
 }
 
 nav ul {
+  margin: 0 auto;
+  padding: 0;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   height: 100px;
+  max-width: 1500px;
+  width: 100%;
   background-color: transparent;
   gap: 10%;
   margin-right: 20%;
@@ -53,28 +62,57 @@ nav ul li:hover {
 }
 
 nav ul li a {
+  flex-grow: 1;
+  box-sizing: border-box;
   text-decoration: none;
-  color: white;
+  color: #000;
+  box-shadow: 3px 3px 5px transparent;
+  padding: 20px;
 }
 
 .hero-section-images {
   display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .leftimg {
+  position: relative;
   opacity: 100%;
   width: 33.33%;
+  margin: 5px;
 }
 
 .middleimg {
+  position: relative;
   opacity: 100%;
   width: 33.33%;
+  margin: 5px;
 }
 
 .rightimg {
+  position: relative;
   opacity: 100%;
   width: 33.33%;
+  margin: 5px;
 }
+.column {
+    flex: 33.33%;
+  padding: 0px;
+  
+}
+.row {
+    display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    .column {
+      width: 100%;
+    }
+  }
