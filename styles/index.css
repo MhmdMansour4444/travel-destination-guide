@@ -221,6 +221,7 @@ nav ul li a {
   align-items: center;
   justify-content: space-evenly;
   background-color: rgb(137, 218, 90);
+  font-style: italic;
   border: 5px;
   height: 100px;
   bottom: 0;

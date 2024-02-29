@@ -59,3 +59,19 @@ nav ul li a{
   .profile-link:hover {
     background-color: #0056b3;
   }
+
+  .main-footer {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(137, 218, 90);
+    font-style: italic;
+    border: 5px;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
