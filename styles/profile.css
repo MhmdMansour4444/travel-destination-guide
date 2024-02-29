@@ -1,0 +1,61 @@
+.header{
+    background-color: transparent;
+}
+
+
+nav ul li a{
+    color: black;
+}
+
+.icon-title{
+    color: rgb(137, 218, 90);
+}
+.profile-section {
+    margin-top: 0px;
+    padding: 200px;
+  }
+  
+  .profile-container {
+    background-color: #f9f9f9;
+    border: 1px solid rgb(137, 218, 90);
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .profile-picture {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    background-image: url(/images/jhin-removebg-preview.png);
+  }
+  
+  .profile-details {
+    text-align: center;
+  }
+  
+  .profile-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .profile-details p {
+    margin: 5px 0;
+  }
+  
+  .profile-link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-link:hover {
+    background-color: #0056b3;
+  }
