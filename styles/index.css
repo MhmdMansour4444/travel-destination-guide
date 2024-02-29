@@ -14,24 +14,49 @@ body {
   flex-direction: row;
   width: 100%;
   background-color: transparent;
+  font-family: fantasy;
+  font-size: 25px;
 }
 
 .searchbar-color {
   background-color: rgba(255, 0, 0, 0.5);
 }
+
 .searchbar-header {
   display: flex;
   align-self: center;
   flex: 2;
   justify-content: center;
+  
 }
 
 .logo-header {
-  flex: 1;
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.page-icon {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+.icon-title {
+  display: flex;
+  align-self: center;
+  padding: 5px;
+  font-family: fantasy;
+  font-size: 30px;
+  color: white;
 }
 
 .nav-header {
-  flex: 1;
+  display: flex;
+  align-self: center;
+  flex: 2;
+  justify-content: stretch;
 }
 
 nav {
@@ -39,19 +64,17 @@ nav {
 }
 
 nav ul {
+  align-items: center;
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
   height: 100px;
   max-width: 1500px;
   width: 100%;
   background-color: transparent;
-  gap: 10%;
-  margin-right: 20%;
 }
 nav ul li {
   opacity: 100%;
@@ -65,7 +88,7 @@ nav ul li a {
   flex-grow: 1;
   box-sizing: border-box;
   text-decoration: none;
-  color: #000;
+  color: white;
   box-shadow: 3px 3px 5px transparent;
   padding: 20px;
 }
@@ -108,8 +131,9 @@ nav ul li a {
   object-fit: cover;
 }
 .column img {
-    object-fit: contain;
-    width: 100%;
+  object-fit: cover;
+  width: 100%;
+  min-height: 450px;
 }
 .row {
   display: flex;
@@ -123,9 +147,16 @@ nav ul li a {
   gap: 20%;
   height: 150px;
 }
+
 .btn {
   text-decoration: none;
-  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 50px;
+  color: white;
+  background-color: rgb(82, 82, 235);
+  border-radius: 30px;
+
 }
 
 .text-uppercase {
@@ -160,7 +191,18 @@ nav ul li a {
   padding: 10px;
 }
 
-
+.main-footer {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(82, 82, 235);
+    height: 80px;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
 
 @media screen and (max-width: 1024px) {
   .column {
